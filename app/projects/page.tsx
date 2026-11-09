@@ -61,7 +61,12 @@ export default function ProjectsPage() {
           </div>
         </section>
 
-        <EditorialProjectsSection />
+        <EditorialProjectsSection
+          eyebrow="Project index"
+          heading="The work behind the outcomes."
+          description="Explore the decisions, systems, and interactions that turned complex problems into useful products."
+          layout="grid"
+        />
         <ContactSection />
       </main>
     </div>
