@@ -33,24 +33,26 @@ export default function ProjectsPage() {
                 </p>
               </div>
 
-              <div className="group relative aspect-[1.25/1] overflow-hidden rounded-[26px] bg-[#e9d477]">
-                <Image
-                  src="/images/portfolio/cosphere-cover.avif"
-                  alt="CoSphere travel companion project"
-                  fill
-                  priority
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.025]"
-                  sizes="390px"
-                />
-                <div className="absolute bottom-5 left-5 rounded-full bg-[#fbfaf7]/95 px-5 py-3 backdrop-blur-sm">
+              <a href="/projects/cosphere-travel" className="group block">
+                <div className="relative aspect-[1.25/1] overflow-hidden rounded-[26px] bg-[#e9d477]">
+                  <Image
+                    src="/images/portfolio/cosphere-cover.avif"
+                    alt="CoSphere travel companion project"
+                    fill
+                    priority
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.025]"
+                    sizes="390px"
+                  />
+                  <div className="absolute bottom-5 left-5 rounded-full bg-[#fbfaf7]/95 px-5 py-3 backdrop-blur-sm">
                   <p className="max-w-[240px] text-xs font-bold uppercase tracking-[0.1em] text-[#151515]">
                     CoSphere - Travel Companion Matching Platform
-                  </p>
-                  <p className="mt-1 text-[11px] text-[#656560]">
-                    UX / Product Design &amp; AI Workflow
-                  </p>
+                    </p>
+                    <p className="mt-1 text-[11px] text-[#656560]">
+                      UX / Product Design &amp; AI Workflow
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div className="mx-auto mt-16 flex max-w-[1060px] flex-wrap gap-x-8 gap-y-2 border-t border-[#d8d8d2] pt-5 text-[11px] uppercase tracking-[0.12em] text-[#777771]">

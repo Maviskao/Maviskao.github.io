@@ -54,27 +54,29 @@ export default function EditorialHeroSection() {
               <span>Featured case study</span>
               <span>01 / 05</span>
             </div>
-            <div className="group relative aspect-[2/1] overflow-hidden rounded-[26px] bg-[#e9d477]">
-              <Image
-                src="/images/portfolio/cosphere-cover.avif"
-                alt="Travel Companion Matching Platform"
-                fill
-                priority
-                className="object-cover transition-transform duration-700 group-hover:scale-[1.025]"
-                sizes="(max-width: 768px) 100vw, 940px"
-              />
-              <div className="absolute left-5 top-5 rounded-full bg-[#fbfaf7]/95 px-5 py-3 backdrop-blur-sm md:left-7 md:top-7">
+            <a href="/projects/cosphere-travel" className="group block">
+              <div className="relative aspect-[2/1] overflow-hidden rounded-[26px] bg-[#e9d477]">
+                <Image
+                  src="/images/portfolio/cosphere-cover.avif"
+                  alt="CoSphere Travel Companion Matching Platform"
+                  fill
+                  priority
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.025]"
+                  sizes="(max-width: 768px) 100vw, 940px"
+                />
+                <div className="absolute left-5 top-5 rounded-full bg-[#fbfaf7]/95 px-5 py-3 backdrop-blur-sm md:left-7 md:top-7">
                   <p className="max-w-[240px] text-xs font-bold uppercase tracking-[0.1em] text-[#151515]">
                     CoSphere - Travel Companion Matching Platform
-                </p>
-                <p className="mt-1 text-[11px] text-[#656560]">
-                  UX / Product Design &amp; AI Workflow
-                </p>
+                  </p>
+                  <p className="mt-1 text-[11px] text-[#656560]">
+                    UX / Product Design &amp; AI Workflow
+                  </p>
+                </div>
+                <span className="absolute bottom-5 right-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#f07b61] text-2xl text-white transition-transform group-hover:rotate-12 md:bottom-7 md:right-7">
+                  ↗
+                </span>
               </div>
-              <span className="absolute bottom-5 right-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#f07b61] text-2xl text-white transition-transform group-hover:rotate-12 md:bottom-7 md:right-7">
-                ↗
-              </span>
-            </div>
+            </a>
           </motion.div>
         </div>
 

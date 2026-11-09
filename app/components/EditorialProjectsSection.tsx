@@ -65,7 +65,7 @@ export default function EditorialProjectsSection({
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
                 <motion.a
-                  href="#contact-me"
+                  href={index === 0 ? "/projects/cosphere-travel" : "#contact-me"}
                   key={project.number}
                   initial={{ opacity: 0, y: 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function EditorialProjectsSection({
             <div className="border-t border-[#151515]">
               {projects.map((project, index) => (
                 <motion.a
-                  href="#contact-me"
+                  href={index === 0 ? "/projects/cosphere-travel" : "#contact-me"}
                   key={project.number}
                   initial={{ opacity: 0, y: 12 }}
                   whileInView={{ opacity: 1, y: 0 }}
