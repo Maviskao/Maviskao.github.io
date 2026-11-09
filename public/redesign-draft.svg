@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="1100" viewBox="0 0 1440 1100">
+  <rect width="1440" height="1100" fill="#f2eee7"/>
+  <circle cx="1280" cy="80" r="250" fill="#d9e3da"/>
+  <path d="M0 870 C250 790 390 940 620 875 C860 808 1040 790 1440 890 L1440 1100 L0 1100 Z" fill="#1f2925"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#1f2925">
+    <text x="88" y="72" font-size="20" font-weight="700" letter-spacing="3">MAVIS KAO</text>
+    <text x="1055" y="72" font-size="15" font-weight="700">WORK</text>
+    <text x="1155" y="72" font-size="15">ABOUT</text>
+    <rect x="1245" y="43" width="112" height="42" rx="21" fill="#e76f51"/>
+    <text x="1269" y="69" font-size="14" font-weight="700" fill="#fff">CONTACT</text>
+
+    <text x="88" y="174" font-size="15" font-weight="700" fill="#e76f51" letter-spacing="2">UX / PRODUCT DESIGNER</text>
+    <text x="88" y="257" font-size="72" font-weight="700">I make complex</text>
+    <text x="88" y="337" font-size="72" font-weight="700">products feel clear.</text>
+    <text x="88" y="397" font-size="22" fill="#5d625d">Research-led design for finance, AI, and everyday life.</text>
+    <text x="88" y="430" font-size="22" fill="#5d625d">Based in Canada. Working worldwide.</text>
+
+    <rect x="88" y="484" width="164" height="50" rx="25" fill="#1f2925"/>
+    <text x="119" y="516" font-size="15" font-weight="700" fill="#fff">SEE MY WORK  &#8594;</text>
+    <text x="280" y="516" font-size="15" font-weight="700" fill="#1f2925">LINKEDIN  &#8599;</text>
+
+    <rect x="900" y="130" width="390" height="500" rx="195" fill="#d8c8b7"/>
+    <image x="920" y="150" width="350" height="460" preserveAspectRatio="xMidYMid slice" xlink:href="/images/about/exp-1.png" clip-path="url(#portrait)"/>
+    <circle cx="1215" cy="550" r="58" fill="#e76f51"/>
+    <text x="1184" y="545" font-size="13" font-weight="700" fill="#fff">DESIGN</text>
+    <text x="1182" y="563" font-size="13" font-weight="700" fill="#fff">WITH CARE</text>
+
+    <text x="88" y="750" font-size="15" font-weight="700" fill="#e76f51" letter-spacing="2">SELECTED WORK</text>
+    <text x="88" y="818" font-size="50" font-weight="700" fill="#fff">A few problems worth solving.</text>
+    <text x="88" y="862" font-size="19" fill="#c7d0ca">Interfaces, systems, and experiences shaped with people in mind.</text>
+
+    <rect x="88" y="930" width="300" height="112" rx="18" fill="#f3d37a"/>
+    <image x="102" y="944" width="110" height="84" preserveAspectRatio="xMidYMid slice" xlink:href="/images/portfolio/travel-companion.png"/>
+    <text x="230" y="972" font-size="14" font-weight="700" fill="#1f2925">TRAVEL</text>
+    <text x="230" y="995" font-size="14" fill="#1f2925">AI workflow</text>
+    <text x="230" y="1019" font-size="14" font-weight="700" fill="#e76f51">VIEW  &#8594;</text>
+
+    <rect x="416" y="930" width="300" height="112" rx="18" fill="#d7e1d9"/>
+    <image x="430" y="944" width="110" height="84" preserveAspectRatio="xMidYMid slice" xlink:href="/images/portfolio/line-bank.png"/>
+    <text x="558" y="972" font-size="14" font-weight="700" fill="#1f2925">LINE BANK</text>
+    <text x="558" y="995" font-size="14" fill="#1f2925">Accessibility</text>
+    <text x="558" y="1019" font-size="14" font-weight="700" fill="#e76f51">VIEW  &#8594;</text>
+
+    <rect x="744" y="930" width="300" height="112" rx="18" fill="#e6b7a9"/>
+    <image x="758" y="944" width="110" height="84" preserveAspectRatio="xMidYMid slice" xlink:href="/images/portfolio/cathay.png"/>
+    <text x="886" y="972" font-size="14" font-weight="700" fill="#1f2925">CATHAY</text>
+    <text x="886" y="995" font-size="14" fill="#1f2925">Wealth platform</text>
+    <text x="886" y="1019" font-size="14" font-weight="700" fill="#e76f51">VIEW  &#8594;</text>
+
+    <text x="1184" y="979" font-size="42" font-weight="700" fill="#e76f51">01</text>
+    <text x="1184" y="1012" font-size="14" fill="#c7d0ca">START HERE</text>
+  </g>
+
+  <defs>
+    <clipPath id="portrait">
+      <rect x="920" y="150" width="350" height="460" rx="175"/>
+    </clipPath>
+  </defs>
+</svg>

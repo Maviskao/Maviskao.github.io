@@ -1,16 +1,16 @@
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import ProjectsSection from "./components/ProjectsSection";
+import EditorialHeroSection from "./components/EditorialHeroSection";
+import EditorialProjectsSection from "./components/EditorialProjectsSection";
 import CompaniesSection from "./components/CompaniesSection";
 import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f5f5f4]">
+    <div className="flex min-h-screen flex-col bg-[#fbfaf7]">
       <Navbar />
       <main className="flex-1">
-        <HeroSection />
-        <ProjectsSection />
+        <EditorialHeroSection />
+        <EditorialProjectsSection />
         <CompaniesSection />
         <ContactSection />
       </main>

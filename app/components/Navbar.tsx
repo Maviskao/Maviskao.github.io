@@ -13,9 +13,9 @@ export default function Navbar() {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/80 border-b border-black/[0.04]"
+      className="fixed left-4 right-4 top-4 z-50 rounded-full border border-black/[0.06] bg-[#fbfaf7]/90 shadow-[0_8px_30px_rgba(32,27,24,0.08)] backdrop-blur-xl md:left-12 md:right-12"
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5 md:px-8">
         {/* Left: Logo Icon + "HEY, I'M MAVIS" */}
         <Link
           href="/"
@@ -30,16 +30,16 @@ export default function Navbar() {
               priority
             />
           </div>
-          <span className="font-extrabold text-sm md:text-base tracking-wider text-[#1a1a18] uppercase">
-            HEY, I&apos;M MAVIS
+          <span className="text-sm font-extrabold uppercase tracking-[0.16em] text-[#1a1a18] md:text-base">
+            MAVIS KAO
           </span>
         </Link>
 
         {/* Right: Nav items */}
-        <nav className="flex items-center gap-6 md:gap-8">
+          <nav className="flex items-center gap-4 md:gap-8">
           <Link
             href="/projects"
-            className={`text-sm font-medium transition-colors ${
+              className={`text-xs font-medium transition-colors md:text-sm ${
               pathname === "/projects"
                 ? "text-[#1a1a18] font-semibold"
                 : "text-[#666663] hover:text-[#1a1a18]"
@@ -49,7 +49,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/about"
-            className={`text-sm font-medium transition-colors ${
+              className={`hidden text-xs font-medium transition-colors sm:block md:text-sm ${
               pathname === "/about"
                 ? "text-[#1a1a18] font-semibold"
                 : "text-[#666663] hover:text-[#1a1a18]"
@@ -59,7 +59,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="#contact-me"
-            className="px-4 py-1.5 rounded-full border border-[#d6d6d4] text-[#1a1a18] text-xs font-semibold hover:bg-black hover:text-white hover:border-black transition-all shadow-2xs"
+            className="rounded-full bg-[#f5cb4e] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[#151515] transition-transform hover:-translate-y-0.5"
           >
             Contact me
           </Link>
