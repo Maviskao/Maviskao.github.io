@@ -104,136 +104,134 @@ const volunteering = [
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f5f5f4]">
+    <div className="flex min-h-screen flex-col bg-[#fbfaf7]">
       <Navbar />
 
       <main className="flex-1">
-        {/* Top Hero Card (White rounded card matching Screenshot 1) */}
-        <div className="bg-white rounded-b-[40px] md:rounded-b-[56px] pt-32 pb-20 px-6 md:px-12 border-b border-black/[0.04]">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-[44px] font-extrabold text-[#1a1a18] tracking-tight leading-tight mb-12">
-              Designing Starts with Observing the World
-            </h1>
+        <section className="relative overflow-hidden bg-[linear-gradient(120deg,#e5c7ee_0%,#f2d89e_52%,#bce3e1_100%)] px-4 pb-20 pt-4 md:px-12 md:pb-28 md:pt-8">
+          <div className="pointer-events-none absolute -left-32 top-8 h-80 w-80 rounded-full bg-[#f3a9c8]/35 blur-3xl" />
+          <div className="pointer-events-none absolute -right-24 bottom-20 h-96 w-96 rounded-full bg-[#f7e86c]/40 blur-3xl" />
 
-            <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-start">
-              {/* Photo */}
-              <div className="w-full max-w-[280px] aspect-[4/4.8] rounded-2xl overflow-hidden relative shadow-sm border border-gray-100 bg-[#f0f0ee]">
-                <Image
-                  src="/images/about/exp-1.png"
-                  alt="Mavis Kao in nature"
-                  fill
-                  className="object-cover"
-                  sizes="280px"
-                  priority
-                />
+          <div className="relative mx-auto max-w-[1300px] rounded-[30px] bg-[#fbfaf7] px-6 pb-12 pt-28 shadow-[0_24px_70px_rgba(32,27,24,0.12)] md:rounded-[42px] md:px-16 md:pb-16 md:pt-36">
+            <div className="mx-auto max-w-[1060px]">
+              <div className="grid items-start gap-12 md:grid-cols-[1fr_330px] md:gap-20">
+                <div>
+                  <span className="inline-flex rounded-full bg-[#f5cb4e] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.12em] text-[#151515]">
+                    About Mavis
+                  </span>
+                  <h1 className="mt-8 max-w-3xl text-[clamp(2.8rem,6vw,5.4rem)] font-bold leading-[0.96] tracking-[-0.055em] text-[#151515]">
+                    Designing starts with observing the world.
+                  </h1>
+                  <p className="mt-8 max-w-xl text-base leading-7 text-[#656560] md:text-lg">
+                    I&apos;m a UX and product designer passionate about turning
+                    complex systems into simple, intuitive experiences.
+                  </p>
+                  <p className="mt-5 max-w-xl text-sm leading-6 text-[#777771]">
+                    I&apos;ve led projects at Alibaba, LINE Bank, and Cathay
+                    Financial Holdings, taking products from strategy to
+                    execution with research, interface design, and
+                    accessibility at the center.
+                  </p>
+                </div>
+
+                <div className="relative mx-auto w-full max-w-[330px]">
+                  <div className="aspect-[4/5] overflow-hidden rounded-[34px] bg-[#e7d3b9]">
+                    <Image
+                      src="/images/about/exp-1.png"
+                      alt="Mavis Kao in nature"
+                      fill
+                      className="object-cover"
+                      sizes="330px"
+                      priority
+                    />
+                  </div>
+                  <div className="absolute -bottom-5 -left-5 flex h-20 w-20 items-center justify-center rounded-full bg-[#f07b61] text-center text-[11px] font-bold uppercase leading-4 text-white">
+                    Design
+                    <br />
+                    with care
+                  </div>
+                </div>
               </div>
 
-              {/* Bio */}
-              <div className="flex flex-col gap-5 text-sm md:text-base text-[#4a4a46] leading-relaxed">
-                <p>
-                  I&apos;m a UX and product designer passionate about turning
-                  complex systems into simple, intuitive experiences. I&apos;ve
-                  led projects at Alibaba, LINE Bank, and Cathay Financial
-                  Holdings, focusing on user research, interface design, and
-                  accessibility. I enjoy taking designs from strategy to
-                  execution, ensuring they are both usable and loved by users.
-                </p>
-                <p className="text-[#737370]">
-                  Outside of work, you&apos;ll find me exploring nature,
-                  capturing moments through photography, and searching for the
-                  best coffee in town. Let&apos;s connect and create something
-                  impactful together.
-                </p>
+              <div className="mt-20 grid grid-cols-2 gap-6 border-t border-[#d8d8d2] pt-6 md:grid-cols-4 md:gap-8">
+                <div>
+                  <p className="text-3xl font-bold tracking-[-0.04em] text-[#151515]">120+</p>
+                  <p className="mt-2 text-[11px] uppercase tracking-[0.1em] text-[#777771]">Usability tests</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold tracking-[-0.04em] text-[#151515]">8</p>
+                  <p className="mt-2 text-[11px] uppercase tracking-[0.1em] text-[#777771]">Apps redesigned</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold tracking-[-0.04em] text-[#151515]">10+</p>
+                  <p className="mt-2 text-[11px] uppercase tracking-[0.1em] text-[#777771]">Years designing</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-bold tracking-[-0.04em] text-[#151515]">CA</p>
+                  <p className="mt-2 text-[11px] uppercase tracking-[0.1em] text-[#777771]">Working worldwide</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Work Experience Section */}
-        <section className="py-16 md:py-20 px-6 md:px-12 max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1a1a18] tracking-tight mb-8">
-            Work Experience
-          </h2>
-
-          <div className="flex flex-col gap-8">
-            {workExperience.map((exp, index) => (
-              <div key={index} className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl overflow-hidden relative shrink-0 border border-gray-200/60 bg-white shadow-2xs p-1">
-                  <Image
-                    src={exp.icon}
-                    alt={exp.company}
-                    fill
-                    className="object-contain p-1"
-                  />
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    <h3 className="font-bold text-sm md:text-base text-[#1a1a18]">
-                      {exp.role} – <span className="font-semibold text-[#4a4a46]">{exp.company}</span>
-                    </h3>
-                    <span className="text-xs text-[#8a8a86] font-medium">
-                      {exp.period}
-                    </span>
-                  </div>
-                  <p className="mt-2 text-xs md:text-sm text-[#737370] leading-relaxed">
-                    {exp.desc}
-                  </p>
-                </div>
+        <section className="bg-[#fbfaf7] px-6 py-24 md:px-16 md:py-32">
+          <div className="mx-auto max-w-[1060px]">
+            <div className="grid gap-10 md:grid-cols-[280px_1fr] md:gap-16">
+              <div>
+                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#e86f59]">Experience</p>
+                <h2 className="mt-5 text-4xl font-bold leading-[0.98] tracking-[-0.045em] text-[#151515] md:text-5xl">A practice built across industries.</h2>
               </div>
-            ))}
+              <div className="border-t border-[#151515]">
+                {workExperience.map((exp, index) => (
+                  <article key={index} className="border-b border-[#d8d8d2] py-6">
+                    <div className="flex items-start gap-4 md:gap-7">
+                      <span className="w-7 shrink-0 pt-1 text-xs text-[#777771]">0{index + 1}</span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
+                          <h3 className="text-base font-bold text-[#151515] md:text-xl">{exp.role}</h3>
+                          <span className="text-xs text-[#777771]">{exp.period}</span>
+                        </div>
+                        <p className="mt-1 text-sm font-medium text-[#e86f59]">{exp.company}</p>
+                        <p className="mt-3 max-w-2xl text-sm leading-6 text-[#656560]">{exp.desc}</p>
+                      </div>
+                      <div className="relative hidden h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-[#d8d8d2] bg-white p-1 md:block">
+                        <Image src={exp.icon} alt="" fill className="object-contain p-1" />
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Licenses & Certifications */}
-        <section className="py-12 px-6 md:px-12 max-w-4xl mx-auto border-t border-black/[0.05]">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1a1a18] tracking-tight mb-6">
-            Licenses &amp; Certifications
-          </h2>
-          <ul className="space-y-2.5">
-            {licenses.map((lic, index) => (
-              <li
-                key={index}
-                className="text-xs md:text-sm text-[#4a4a46] flex items-center gap-2"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-[#1a1a18]/40 inline-block"></span>
-                <span>{lic}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        {/* Volunteering & Others */}
-        <section className="py-16 md:py-20 px-6 md:px-12 max-w-4xl mx-auto border-t border-black/[0.05]">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1a1a18] tracking-tight mb-8">
-            Volunteering &amp; Others
-          </h2>
-
-          <div className="flex flex-col gap-8">
-            {volunteering.map((vol, index) => (
-              <div key={index} className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl overflow-hidden relative shrink-0 border border-gray-200/60 bg-white shadow-2xs p-1">
-                  <Image
-                    src={vol.icon}
-                    alt={vol.title}
-                    fill
-                    className="object-contain p-1"
-                  />
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    <h3 className="font-bold text-sm md:text-base text-[#1a1a18]">
-                      {vol.title}
-                    </h3>
-                    <span className="text-xs text-[#8a8a86] font-medium">
-                      {vol.period}
-                    </span>
+        <section className="border-t border-[#d8d8d2] bg-[#f2eee7] px-6 py-24 md:px-16 md:py-32">
+          <div className="mx-auto grid max-w-[1060px] gap-16 md:grid-cols-2">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#e86f59]">Credentials</p>
+              <h2 className="mt-5 text-4xl font-bold leading-[0.98] tracking-[-0.045em] text-[#151515] md:text-5xl">Always learning, always sharing.</h2>
+              <ul className="mt-10 border-t border-[#d8d8d2]">
+                {licenses.map((lic, index) => (
+                  <li key={index} className="border-b border-[#d8d8d2] py-4 text-sm text-[#656560]">{lic}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#e86f59]">Outside the studio</p>
+              <h2 className="mt-5 text-4xl font-bold leading-[0.98] tracking-[-0.045em] text-[#151515] md:text-5xl">Making room for community.</h2>
+              <div className="mt-10 border-t border-[#d8d8d2]">
+                {volunteering.map((vol, index) => (
+                  <div key={index} className="border-b border-[#d8d8d2] py-5">
+                    <div className="flex items-baseline justify-between gap-4">
+                      <h3 className="text-sm font-bold text-[#151515]">{vol.title}</h3>
+                      <span className="shrink-0 text-[11px] text-[#777771]">{vol.period}</span>
+                    </div>
+                    <p className="mt-2 text-sm leading-6 text-[#656560]">{vol.desc}</p>
                   </div>
-                  <p className="mt-2 text-xs md:text-sm text-[#737370] leading-relaxed">
-                    {vol.desc}
-                  </p>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </section>
 
