@@ -6,33 +6,33 @@ import Image from "next/image";
 const projects = [
   {
     number: "01",
-    title: "Travel Companion Matching Platform",
-    detail: "AI workflow / product design",
-    image: "/images/portfolio/travel-companion.png",
+    title: "CoSphere - Travel Companion Matching Platform",
+    detail: "UX / Product Design & AI Workflow",
+    image: "/images/portfolio/cosphere-cover.avif",
   },
   {
     number: "02",
     title: "LINE Bank Accessibility",
     detail: "Inclusive finance / systems thinking",
-    image: "/images/portfolio/line-bank.png",
+    image: "/images/portfolio/line-bank-cover.png",
   },
   {
     number: "03",
     title: "Cathay Wealth Platform",
     detail: "0 to 1 product strategy",
-    image: "/images/portfolio/cathay.png",
+    image: "/images/portfolio/cathay-cover.png",
   },
   {
     number: "04",
     title: "Alibaba Alixiaomi",
     detail: "AI service / conversational UX",
-    image: "/images/portfolio/alibaba.png",
+    image: "/images/portfolio/alibaba-cover.png",
   },
   {
     number: "05",
     title: "EF Parents App",
     detail: "Communication / learning experience",
-    image: "/images/portfolio/ef-parents.png",
+    image: "/images/portfolio/ef-parents-cover.png",
   },
 ];
 

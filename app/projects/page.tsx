@@ -35,19 +35,19 @@ export default function ProjectsPage() {
 
               <div className="group relative aspect-[1.25/1] overflow-hidden rounded-[26px] bg-[#e9d477]">
                 <Image
-                  src="/images/portfolio/line-bank.png"
-                  alt="LINE Bank accessibility project"
+                  src="/images/portfolio/cosphere-cover.avif"
+                  alt="CoSphere travel companion project"
                   fill
                   priority
                   className="object-cover transition-transform duration-700 group-hover:scale-[1.025]"
                   sizes="390px"
                 />
                 <div className="absolute bottom-5 left-5 rounded-full bg-[#fbfaf7]/95 px-5 py-3 backdrop-blur-sm">
-                  <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#151515]">
-                    LINE Bank
+                  <p className="max-w-[240px] text-xs font-bold uppercase tracking-[0.1em] text-[#151515]">
+                    CoSphere - Travel Companion Matching Platform
                   </p>
                   <p className="mt-1 text-[11px] text-[#656560]">
-                    Accessibility / inclusive finance
+                    UX / Product Design &amp; AI Workflow
                   </p>
                 </div>
               </div>

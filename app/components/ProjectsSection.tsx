@@ -8,9 +8,9 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
-    title: "Travel Companion Matching Platform",
+    title: "CoSphere - Travel Companion Matching Platform",
     subtitle: "UX / Product Design & AI Workflow",
-    image: "/images/portfolio/travel-companion.png",
+    image: "/images/portfolio/cosphere-cover.avif",
     href: "#",
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     title: "Enabling Accessibility in LINE Bank",
     subtitle:
       "Drove LINE Bank's first Accessibility Certification by aligning compliance, design, and development.",
-    image: "/images/portfolio/line-bank.png",
+    image: "/images/portfolio/line-bank-cover.png",
     href: "#",
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     title: "Cathay Financial Holdings: 0→1: Client Wealth Platform",
     subtitle:
       "From concept to launch — delivering an intuitive, high-impact platform.",
-    image: "/images/portfolio/cathay.png",
+    image: "/images/portfolio/cathay-cover.png",
     href: "#",
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       "Alibaba's chatbot Alixiaomi - From Help Center to AI Chatbot",
     subtitle:
       "Enhancing Taobao users' self-service experience with intelligent, automated support.",
-    image: "/images/portfolio/alibaba.png",
+    image: "/images/portfolio/alibaba-cover.png",
     href: "#",
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     title: "EF Parents App: Unified Communication & Learning",
     subtitle:
       "Connecting parents and Progress Advisors through messaging, learning, and activity tracking",
-    image: "/images/portfolio/ef-parents.png",
+    image: "/images/portfolio/ef-parents-cover.png",
     href: "#",
   },
 ];
