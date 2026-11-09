@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://maviskao.framer.website"),
+  metadataBase: new URL("https://www.maviskao.com"),
   title: "Mavis Kao — Portfolio website",
   description:
     "Mavis Kao is a UX & Product Designer with experience in fintech, startups, and global companies. Explore her portfolio showcasing user-centered design, product strategy, and digital innovation.",
