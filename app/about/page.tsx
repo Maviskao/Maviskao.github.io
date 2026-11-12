@@ -22,6 +22,7 @@ const workExperience = [
     period: "Nov 2021 - Sep 2022",
     desc: "Led cross-functional projects to create intuitive financial experiences, including deposit features and accessibility initiatives. Bridged design, engineering, and compliance to make digital banking more inclusive and user-friendly.",
     icon: "/images/about/exp-3.png",
+    href: "/projects/line-bank-accessibility",
   },
   {
     role: "Assistant Manager – UX Designer",
@@ -29,6 +30,7 @@ const workExperience = [
     period: "May 2018 - Nov 2021",
     desc: "Redesigned the financial design system across 8 apps and 1 web platform, ensuring visual consistency and intuitive user flows. Led cross-functional teams to optimize the account opening process, growing users from 200K to 1M in a year. Conducted user research, usability tests, and mentoring for junior designers, turning insights into actionable product improvements.",
     icon: "/images/about/exp-4.png",
+    href: "/projects/cathay-wealth-platform",
   },
   {
     role: "Lead Designer",
@@ -36,6 +38,7 @@ const workExperience = [
     period: "Jul 2017 - May 2018",
     desc: "Designed educational products with a focus on cross-cultural user experiences. Applied user research insights to create intuitive learning platforms that engage global audiences.",
     icon: "/images/about/exp-5.png",
+    href: "/projects/ef-parents",
   },
   {
     role: "User Experience Designer",
@@ -50,6 +53,7 @@ const workExperience = [
     period: "Sep 2014 - Sep 2016",
     desc: "Conducted over 120 usability tests and interviews to inform AI service and membership feature designs. Translated complex e-commerce workflows into seamless, user-centered experiences.",
     icon: "/images/about/vol-1.png",
+    href: "/projects/alibaba-alixiaomi",
   },
 ];
 
@@ -194,6 +198,14 @@ export default function AboutPage() {
                         </div>
                         <p className="mt-1 text-sm font-medium text-[#e86f59]">{exp.company}</p>
                         <p className="mt-3 max-w-2xl text-sm leading-6 text-[#656560]">{exp.desc}</p>
+                        {"href" in exp && exp.href ? (
+                          <a
+                            href={exp.href}
+                            className="mt-3 inline-flex text-[11px] font-bold uppercase tracking-[0.12em] text-[#e86f59] hover:text-[#151515]"
+                          >
+                            View case study
+                          </a>
+                        ) : null}
                       </div>
                       <div className="relative hidden h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-[#d8d8d2] bg-white p-1 md:block">
                         <Image src={exp.icon} alt="" fill className="object-contain p-1" />

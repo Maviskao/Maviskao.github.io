@@ -9,30 +9,35 @@ const projects = [
     title: "CoSphere - Travel Companion Matching Platform",
     detail: "UX / Product Design & AI Workflow",
     image: "/images/portfolio/cosphere-cover.avif",
+    href: "/projects/cosphere-travel",
   },
   {
     number: "02",
     title: "LINE Bank Accessibility",
     detail: "Inclusive finance / systems thinking",
     image: "/images/portfolio/line-bank-cover.png",
+    href: "/projects/line-bank-accessibility",
   },
   {
     number: "03",
     title: "Cathay Wealth Platform",
     detail: "0 to 1 product strategy",
     image: "/images/portfolio/cathay-cover.png",
+    href: "/projects/cathay-wealth-platform",
   },
   {
     number: "04",
     title: "Alibaba Alixiaomi",
     detail: "AI service / conversational UX",
     image: "/images/portfolio/alibaba-cover.png",
+    href: "/projects/alibaba-alixiaomi",
   },
   {
     number: "05",
     title: "EF Parents App",
     detail: "Communication / learning experience",
     image: "/images/portfolio/ef-parents-cover.png",
+    href: "/projects/ef-parents",
   },
 ];
 
@@ -65,7 +70,7 @@ export default function EditorialProjectsSection({
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
                 <motion.a
-                  href={index === 0 ? "/projects/cosphere-travel" : "#contact-me"}
+                  href={project.href}
                   key={project.number}
                   initial={{ opacity: 0, y: 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +105,7 @@ export default function EditorialProjectsSection({
             <div className="border-t border-[#151515]">
               {projects.map((project, index) => (
                 <motion.a
-                  href={index === 0 ? "/projects/cosphere-travel" : "#contact-me"}
+                  href={project.href}
                   key={project.number}
                   initial={{ opacity: 0, y: 12 }}
                   whileInView={{ opacity: 1, y: 0 }}
