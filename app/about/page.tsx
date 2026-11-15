@@ -82,7 +82,7 @@ const workExperience: WorkExperienceItem[] = [
     company: "Alibaba Group Inc",
     period: "Sep 2014 - Sep 2016",
     desc: "Conducted over 120 usability tests and interviews to inform AI service and membership feature designs. Translated complex e-commerce workflows into seamless, user-centered experiences.",
-    icon: "/images/about/vol-1.png",
+    icon: "/images/about/exp-alibaba.png",
     href: "/projects/alibaba-alixiaomi",
   },
 ];
@@ -262,8 +262,8 @@ export default function AboutPage() {
                           </a>
                         ) : null}
                       </div>
-                      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-[#d8d8d2] bg-white p-1">
-                        <Image src={exp.icon} alt="" fill className="object-contain p-1" />
+                      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-[#d8d8d2] bg-white">
+                        <Image src={exp.icon} alt="" fill className="object-cover" />
                       </div>
                     </div>
                   </article>
