@@ -8,13 +8,43 @@ export const metadata = {
     "Designing Starts with Observing the World. UX and product designer passionate about turning complex systems into simple, intuitive experiences.",
 };
 
-const workExperience = [
+type WorkExperienceItem = {
+  role: string;
+  company: string;
+  period: string;
+  desc: string;
+  bullets?: { title: string; content: string }[];
+  skills?: string[];
+  icon: string;
+  href?: string;
+};
+
+const workExperience: WorkExperienceItem[] = [
   {
-    role: "Independent Product Designer",
-    company: "CoSphere",
+    role: "Co-Founder | Product Designer & Builder",
+    company: "Cosphere Technologies Inc.",
     period: "Sep 2022 - Present",
-    desc: "Assisted visitors in locating animals and shared insights about their behaviours, enhancing their zoo experience. During summer festivals, provided guidance and support so guests could fully enjoy music and movie events.",
-    icon: "/images/about/exp-2.png",
+    desc: "Founded and architected the CoSphere travel platform and venture studio, leading end-to-end execution from initial user discovery to interactive web launch.",
+    bullets: [
+      {
+        title: "AI-Assisted Rapid Engineering",
+        content:
+          "Leveraged modern AI development workflows (Next.js, React, Tailwind CSS, Supabase) to transform high-fidelity UI into functional, production-ready web applications, slashing development turnaround by 50%.",
+      },
+      {
+        title: "Scalable Design Systems",
+        content:
+          "Established modular component libraries and tokens across web and mobile viewports, maintaining seamless visual consistency and accelerating multi-platform feature delivery.",
+      },
+      {
+        title: "Client MVPs & Digital Solutions",
+        content:
+          "Spearheaded rapid UX/UI architecture for diverse client initiatives, including digital health/fitness applications and interactive data dashboards.",
+      },
+    ],
+    skills: ["Product Design", "Artificial Intelligence (AI)"],
+    icon: "/images/about/cosphere-logo.png",
+    href: "/projects/cosphere-travel",
   },
   {
     role: "Manager, UX Designer",
@@ -198,6 +228,31 @@ export default function AboutPage() {
                         </div>
                         <p className="mt-1 text-sm font-medium text-[#e86f59]">{exp.company}</p>
                         <p className="mt-3 max-w-2xl text-sm leading-6 text-[#656560]">{exp.desc}</p>
+                        {exp.bullets ? (
+                          <ul className="mt-3 max-w-2xl space-y-2 text-sm leading-6 text-[#656560]">
+                            {exp.bullets.map((b, bIdx) => (
+                              <li key={bIdx} className="flex items-start gap-2">
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#e86f59]" />
+                                <span>
+                                  <strong className="font-semibold text-[#151515]">{b.title}:</strong>{" "}
+                                  {b.content}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : null}
+                        {exp.skills ? (
+                          <div className="mt-3.5 flex flex-wrap gap-1.5">
+                            {exp.skills.map((skill, sIdx) => (
+                              <span
+                                key={sIdx}
+                                className="inline-block rounded-full bg-black/[0.04] px-2.5 py-0.5 text-[11px] font-medium text-[#4a4a46] border border-black/[0.06]"
+                              >
+                                {skill}
+                              </span>
+                            ))}
+                          </div>
+                        ) : null}
                         {"href" in exp && exp.href ? (
                           <a
                             href={exp.href}
@@ -207,7 +262,7 @@ export default function AboutPage() {
                           </a>
                         ) : null}
                       </div>
-                      <div className="relative hidden h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-[#d8d8d2] bg-white p-1 md:block">
+                      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-[#d8d8d2] bg-white p-1">
                         <Image src={exp.icon} alt="" fill className="object-contain p-1" />
                       </div>
                     </div>
